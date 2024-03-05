@@ -1,0 +1,15 @@
+[package]
+name = "rudis"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = {version="1",feature=["full"]}
+mini-redis = "0.4.1"
+bytes = "1"
+
+[[example]]
+name = "hello-redis"
+path = "examples/hello-redis.rs"
